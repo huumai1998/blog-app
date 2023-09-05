@@ -1,0 +1,19 @@
+@use "../variables/" as *;
+
+:root {
+  --bg: $white;
+  --textColor: $black;
+  --softBg: $softBg;
+  --softTextColor: $softTextColor;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 10vw;
+  overflow-x: hidden;
+}

@@ -1,0 +1,12 @@
+// COLOR
+$white: white;
+$black: black;
+$softBg: #f0f0f0;
+$softTextColor: #626262;
+
+:export {
+  white: $white;
+  black: $black;
+  softBg: $softBg;
+  softTextColor: $softTextColor;
+}
