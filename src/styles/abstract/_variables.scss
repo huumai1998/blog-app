@@ -1,6 +1,9 @@
 // COLOR
 $white: white;
 $black: black;
+$facebook: rgb(3, 128, 211);
+$insta: rgb(230, 85, 109);
+$github: gray;
 $softBg: #f0f0f0;
 $softTextColor: #626262;
 
@@ -8,5 +11,8 @@ $softTextColor: #626262;
   white: $white;
   black: $black;
   softBg: $softBg;
+  facebook: $facebook;
+  github: $github;
+  insta: $insta;
   softTextColor: $softTextColor;
 }

@@ -1,3 +1,55 @@
+@use "../abstract/" as *;
+
 .nav-container {
-  background-color: red;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  .icons {
+    display: flex;
+    column-gap: 15px;
+  }
+
+  .icon {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: 2px solid $black;
+    // transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.25s;
+    &:hover {
+      outline-offset: 2.5px;
+      animation: shake 0.25s;
+    }
+  }
+  .face {
+    &:hover {
+      background-color: $facebook;
+    }
+  }
+  .insta {
+    &:hover {
+      background-color: $insta;
+    }
+  }
+  .github {
+    &:hover {
+      background-color: $github;
+    }
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
 }
