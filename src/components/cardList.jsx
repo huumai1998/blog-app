@@ -1,7 +1,11 @@
 import React from "react";
+import { Pagination } from ".";
 
-const CardList = () => {
-  return <div className="cardList-container">cardList</div>;
+export const CardList = () => {
+  return (
+    <div className="cardList-container">
+      cardList
+      <Pagination />
+    </div>
+  );
 };
-
-export default CardList;

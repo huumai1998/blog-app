@@ -1,7 +1,5 @@
 import React from "react";
 
-const Pagination = () => {
-  return <div className="panination-container">Pagination</div>;
+export const Pagination = () => {
+  return <div className="pagination-container">featured</div>;
 };
-
-export default Pagination;
