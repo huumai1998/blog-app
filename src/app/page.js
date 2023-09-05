@@ -1,10 +1,12 @@
+import { Navbar, Footer } from "@/components";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <div>
-        <Link href="/">Hello</Link>
+        <Navbar />
+        <Footer />
       </div>
     </>
   );
