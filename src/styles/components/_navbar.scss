@@ -5,9 +5,21 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  .social {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+  }
   .links {
     display: flex;
     gap: 20px;
+    flex: 1;
+  }
+  .logo {
+    flex: 1;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
   }
 
   .icons {
