@@ -5,3 +5,4 @@ export * from "./cardList";
 export * from "./pagination";
 export * from "./categoryList";
 export * from "./menu";
+export * from "./themeToggle";
