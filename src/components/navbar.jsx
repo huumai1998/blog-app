@@ -2,6 +2,7 @@ import React from "react";
 import { FiFacebook, FiGithub } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
 import Link from "next/link";
+import { AuthLinks, ThemeToggle } from ".";
 
 export const Navbar = () => {
   return (
@@ -18,11 +19,12 @@ export const Navbar = () => {
           LOGO HERE
         </Link>
       </div>
-      <div className="link">
+      <div className="links">
+        <ThemeToggle />
         <Link href="#">HomePage</Link>
         <Link href="#">Contact</Link>
         <Link href="#">About</Link>
-        <Link href="#">Login</Link>
+        <AuthLinks />
       </div>
     </div>
   );

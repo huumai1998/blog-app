@@ -1,9 +1,15 @@
 @use "../abstract/" as *;
 
 .nav-container {
-  height: 50px;
+  height: 100px;
   align-items: center;
   display: flex;
+  justify-content: space-between;
+  .links {
+    display: flex;
+    gap: 20px;
+  }
+
   .icons {
     display: flex;
     column-gap: 15px;
