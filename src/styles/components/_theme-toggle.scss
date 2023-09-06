@@ -1,8 +1,8 @@
 @use "../abstract/" as *;
 
 .theme-container {
-  width: 40px;
-  height: 20px;
+  width: 45px;
+  height: 25px;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -12,11 +12,11 @@
   position: relative;
 
   .ball {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: white;
     position: absolute;
-    left: 1px;
+    left: 0.5px;
   }
 }

@@ -1,11 +1,17 @@
+import Image from "next/image";
 import React from "react";
-import { BsMoon, BsSun } from "react-icons/bs";
 export const ThemeToggle = () => {
   return (
     <div className="theme-container">
-      <BsMoon />
+      <Image
+        src="/moon.png"
+        className="moon"
+        alt="moon"
+        width={20}
+        height={20}
+      />
       <div className="ball"></div>
-      <BsSun />
+      <Image src="/sun.png" alt="sun" className="sun" width={20} height={20} />
     </div>
   );
 };
