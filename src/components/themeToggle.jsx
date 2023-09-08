@@ -9,7 +9,15 @@ export const ThemeToggle = () => {
   console.log(theme);
 
   return (
-    <div className="theme-container" onClick={toggle}>
+    <div
+      className="theme-container"
+      onClick={toggle}
+      style={
+        theme === "dark"
+          ? { backgroundColor: "white" }
+          : { backgroundColor: "#0f172a" }
+      }
+    >
       <Image
         src="/moon.png"
         className="moon"
@@ -17,7 +25,14 @@ export const ThemeToggle = () => {
         width={20}
         height={20}
       />
-      <div className="ball"></div>
+      <div
+        className="ball"
+        style={
+          theme === "dark"
+            ? { left: 1, background: "white" }
+            : { right: 1, background: "#0f172a" }
+        }
+      ></div>
       <Image src="/sun.png" alt="sun" className="sun" width={20} height={20} />
     </div>
   );
