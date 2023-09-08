@@ -4,12 +4,12 @@ import { ThemeContext } from "@/context/themeContext";
 import Image from "next/image";
 import React, { useContext } from "react";
 export const ThemeToggle = () => {
-  const { theme } = useContext(ThemeContext);
+  const { toggle, theme } = useContext(ThemeContext);
 
   console.log(theme);
 
   return (
-    <div className="theme-container">
+    <div className="theme-container" onClick={toggle}>
       <Image
         src="/moon.png"
         className="moon"
