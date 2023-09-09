@@ -14,7 +14,7 @@ export const Navbar = () => {
           <FiGithub className="icon github" />
         </div>
       </div> */}
-      <div className="logo">
+      <div className="logo logo-typography">
         <Link href="/" className="">
           LOGO HERE
         </Link>
