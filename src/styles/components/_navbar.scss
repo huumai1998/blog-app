@@ -29,13 +29,16 @@
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 780px) {
   .nav-container {
     .logo {
       text-align: center;
     }
-    .link {
-      display: none;
+    .links {
+      justify-content: flex-end;
+      .link {
+        display: none;
+      }
     }
   }
 }
