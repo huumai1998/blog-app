@@ -12,6 +12,9 @@
   --textColor: #ddd;
   --softBg: #1f273a;
   --softTextColor: #a6a6a6;
+  .responsiveMenu {
+    border-top: 1px dotted $white;
+  }
 }
 
 * {
