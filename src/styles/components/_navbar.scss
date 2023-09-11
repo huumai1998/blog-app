@@ -28,6 +28,18 @@
     column-gap: 15px;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .nav-container {
+    .logo {
+      text-align: center;
+    }
+    .link {
+      display: none;
+    }
+  }
+}
+
 // .icon {
 //   display: inline-flex;
 //   width: 30px;

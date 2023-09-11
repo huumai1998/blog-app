@@ -8,6 +8,15 @@
   .wrapper {
     max-width: 1024px;
   }
+  .nav-container {
+    .logo {
+      font-size: 32px;
+    }
+    .links {
+      font-size: 18px;
+      gap: 15px;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -21,6 +30,11 @@
 @media screen and (max-width: 768px) {
   .wrapper {
     max-width: 640px;
+  }
+  .nav-container {
+    .logo {
+      font-size: 24px;
+    }
   }
 }
 
