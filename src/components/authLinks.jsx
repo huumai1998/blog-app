@@ -5,6 +5,9 @@ import React, { useState } from "react";
 export const AuthLinks = () => {
   const status = "noauthentiated";
   const [open, setOpen] = useState(false);
+  const setOpenHandler = () => {
+    setOpen(!open);
+  };
   return (
     <>
       {status === "noauthentiated" ? (
@@ -21,7 +24,7 @@ export const AuthLinks = () => {
           <span className="link">Logout</span>
         </>
       )}
-      <div className="burger" onClick={() => setOpen(!open)}>
+      <div className="burger" onClick={setOpenHandler}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
