@@ -16,7 +16,7 @@ export const Featured = () => {
             Something write here! this is title of page
           </h1>
           <p className="feature-postDesc">Something here this is text pages!</p>
-          <button className="feature-button">Read More</button>
+          <button className="button">Read More</button>
         </div>
       </div>
     </div>
