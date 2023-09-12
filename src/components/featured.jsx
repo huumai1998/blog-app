@@ -9,11 +9,14 @@ export const Featured = () => {
       </h1>
       <div className="feature-post">
         <div className="feature-imgContainer">
-          <Image src="/test1.jpg" alt="" fill />
+          <Image src="/test1.jpg" alt="" fill className="feature-image" />
         </div>
         <div className="feature-textContainer">
-          <h1>Something write here! this is title of page</h1>
-          <p>Something here this is text pages</p>
+          <h1 className="feature-postTitle">
+            Something write here! this is title of page
+          </h1>
+          <p className="feature-postDesc">Something here this is text pages!</p>
+          <button className="feature-button">Read More</button>
         </div>
       </div>
     </div>
