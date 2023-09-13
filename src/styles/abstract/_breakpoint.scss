@@ -17,6 +17,16 @@
       gap: 15px;
     }
   }
+
+  .feature-container {
+    .feature-title {
+      font-size: 72px;
+    }
+
+    .feature-imgContainer {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -24,6 +34,11 @@
     max-width: 768px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .feature-container {
+    .feature-title {
+      font-size: 64px;
+    }
   }
 }
 
@@ -36,10 +51,18 @@
       font-size: 24px;
     }
   }
+  .feature-container {
+    .feature-title {
+      font-size: 48px;
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
   .wrapper {
     max-width: 475px;
+  }
+  .feature-title {
+    font-size: 36px;
   }
 }

@@ -24,18 +24,10 @@
   touch-action: manipulation;
   vertical-align: baseline;
   width: 150px;
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: rgba(0, 0, 0, 0.65);
     transform: translateY(-1px);
-  }
-  &:active {
-    background-color: $white;
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-    color: rgba(0, 0, 0, 0.65);
-    transform: translateY(0);
   }
 }

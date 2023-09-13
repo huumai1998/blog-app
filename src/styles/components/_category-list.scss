@@ -1,3 +1,4 @@
+@use "../abstract/" as *;
 .categories-container {
   .categories-title {
     margin: 50px 0px;
@@ -20,7 +21,22 @@
       }
     }
     .style {
-      background-color: #57c4ff31;
+      background-color: $style;
+    }
+    .fashion {
+      background-color: $fashion;
+    }
+    .food {
+      background-color: $food;
+    }
+    .travel {
+      background-color: $travel;
+    }
+    .culture {
+      background-color: $culture;
+    }
+    .coding {
+      background-color: $coding;
     }
   }
 }

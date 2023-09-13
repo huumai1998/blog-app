@@ -4,6 +4,12 @@ $black: black;
 $facebook: rgb(3, 128, 211);
 $insta: rgb(230, 85, 109);
 $github: gray;
+$style: #57c4ff31;
+$fashion: #d9e289;
+$food: #f097ce;
+$travel: #97a4f0;
+$culture: #97f0aa;
+$coding: #f0b897;
 $softBg: #f0f0f0;
 $softTextColor: #626262;
 
@@ -14,5 +20,11 @@ $softTextColor: #626262;
   facebook: $facebook;
   github: $github;
   insta: $insta;
+  style: $style;
+  fashion: $fashion;
+  food: $food;
+  travel: $travel;
+  culture: $culture;
+  coding: $coding;
   softTextColor: $softTextColor;
 }
