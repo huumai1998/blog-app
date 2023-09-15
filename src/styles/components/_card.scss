@@ -16,5 +16,17 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    .card-date {
+      color: gray;
+    }
+    .card-category {
+      color: crimson;
+      font-weight: 600;
+    }
+    .desc {
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--softTextColor);
+    }
   }
 }
