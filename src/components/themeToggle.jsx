@@ -29,8 +29,8 @@ export const ThemeToggle = () => {
         className="ball"
         style={
           theme === "dark"
-            ? { left: 0, background: "white" }
-            : { right: 0, background: "#0f172a" }
+            ? { left: 0, background: "#0f172a" }
+            : { right: 0, background: "white" }
         }
       ></div>
       <Image src="/sun.png" alt="sun" className="sun" width={20} height={20} />

@@ -11,9 +11,12 @@
   justify-content: space-between;
   cursor: pointer;
   display: none;
-  .line {
-    width: 100%;
-    height: 2px;
+  .line1,
+  .line2,
+  .line3 {
+    width: 35px;
+    height: 3px;
+    transition: 0.4s;
     background-color: var(--textColor);
   }
 }

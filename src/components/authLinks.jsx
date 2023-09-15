@@ -5,6 +5,7 @@ import React, { useState } from "react";
 export const AuthLinks = () => {
   const status = "noauthentiated";
   const [open, setOpen] = useState(false);
+
   const setOpenHandler = () => {
     setOpen(!open);
   };
@@ -25,9 +26,9 @@ export const AuthLinks = () => {
         </>
       )}
       <div className="burger" onClick={setOpenHandler}>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
       </div>
 
       {open && (
