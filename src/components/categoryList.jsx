@@ -5,7 +5,7 @@ import React from "react";
 export const CategoryList = () => {
   return (
     <div className="categories-container">
-      <h1 className="categories-title">Popular Categories</h1>
+      <h1 className="title">Popular Categories</h1>
       <div className="categories">
         <Link href="/blog?cat=style" className="category style">
           <Image

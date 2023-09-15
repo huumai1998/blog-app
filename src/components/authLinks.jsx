@@ -9,11 +9,10 @@ export const AuthLinks = () => {
   const [change, setChange] = useState("");
 
   const setOpenHandler = () => {
+    setOpen(!open);
     if (!open) {
-      setOpen(!open);
       setChange("change");
     } else {
-      setOpen(!open);
       setChange("");
     }
   };

@@ -1,10 +1,20 @@
 import React from "react";
-import { Pagination } from ".";
+import { Card, Pagination } from ".";
+import Image from "next/image";
 
 export const CardList = () => {
   return (
     <div className="cardList-container">
-      cardList
+      <h1 className="title">Recent Posts</h1>
+      <div className="cardList-posts">
+        <div className="cardList-post">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
       <Pagination />
     </div>
   );

@@ -45,3 +45,13 @@ body {
   padding-left: 80px;
   padding-right: 80px;
 }
+
+.page-content {
+  display: flex;
+  gap: 50px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+}
