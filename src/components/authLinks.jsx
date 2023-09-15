@@ -5,9 +5,17 @@ import React, { useState } from "react";
 export const AuthLinks = () => {
   const status = "noauthentiated";
   const [open, setOpen] = useState(false);
+  const [burger] = useState("burger");
+  const [change, setChange] = useState("");
 
   const setOpenHandler = () => {
-    setOpen(!open);
+    if (!open) {
+      setOpen(!open);
+      setChange("change");
+    } else {
+      setOpen(!open);
+      setChange("");
+    }
   };
   return (
     <>
@@ -25,7 +33,7 @@ export const AuthLinks = () => {
           <span className="link">Logout</span>
         </>
       )}
-      <div className="burger" onClick={setOpenHandler}>
+      <div className={`${burger} ${change}`} onClick={setOpenHandler}>
         <div className="line1"></div>
         <div className="line2"></div>
         <div className="line3"></div>

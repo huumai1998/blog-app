@@ -21,6 +21,18 @@
   }
 }
 
+.change {
+  .line1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  .line2 {
+    opacity: 0;
+  }
+  .line3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+}
+
 .responsiveMenu {
   position: absolute;
   top: 100px;
