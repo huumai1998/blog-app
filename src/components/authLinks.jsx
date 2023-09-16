@@ -1,12 +1,16 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const AuthLinks = () => {
   const status = "noauthentiated";
   const [open, setOpen] = useState(false);
-  const [burger] = useState("burger");
+  const [burger, setBurger] = useState("");
   const [change, setChange] = useState("");
+
+  useEffect(() => {
+    setBurger("burger");
+  }, []);
 
   const setOpenHandler = () => {
     setOpen(!open);
