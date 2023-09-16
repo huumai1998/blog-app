@@ -3,6 +3,7 @@ $white: white;
 $black: black;
 $facebook: rgb(3, 128, 211);
 $insta: rgb(230, 85, 109);
+$gray: gray;
 $github: gray;
 $style: #57c4ff31;
 $fashion: #b7d423;
@@ -16,6 +17,7 @@ $softTextColor: #626262;
 :export {
   white: $white;
   black: $black;
+  gray: $gray;
   softBg: $softBg;
   facebook: $facebook;
   github: $github;

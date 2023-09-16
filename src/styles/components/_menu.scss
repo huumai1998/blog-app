@@ -1,3 +1,78 @@
+@use "../abstract/" as *;
+
 .menu-container {
   flex: 2;
+  margin-top: 60px;
+  .subtitle {
+    color: $gray;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .items {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .imageContainer {
+        flex: 1;
+        aspect-ratio: 1/1;
+        position: relative;
+        .image {
+          border-radius: 50%;
+          border: 3px solid lightgray;
+          object-fit: cover;
+        }
+      }
+      .textContainer {
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        .category {
+          padding: 3px 8px;
+          border-radius: 10px;
+          font-size: 12px;
+          color: $white;
+          width: max-content;
+        }
+        .travel {
+          background-color: $travel;
+        }
+        .style {
+          background-color: $style;
+        }
+        .fashion {
+          background-color: $fashion;
+        }
+        .food {
+          background-color: $food;
+        }
+        .culture {
+          background-color: $culture;
+        }
+        .coding {
+          background-color: $coding;
+        }
+        .posTitle {
+          font-size: 15px;
+          font-weight: 300;
+          color: var(--softTextColor);
+        }
+        .detail {
+          font-size: 12px;
+          .date {
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
 }
