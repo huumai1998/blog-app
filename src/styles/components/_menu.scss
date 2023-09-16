@@ -11,6 +11,38 @@
   .title {
     font-size: 28px;
   }
+
+  .categoryList {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    .categoryItem {
+      padding: 10px 25px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+    .style {
+      background-color: $style;
+    }
+    .fashion {
+      background-color: $fashion;
+    }
+    .food {
+      background-color: $food;
+    }
+    .travel {
+      background-color: $travel;
+    }
+    .culture {
+      background-color: $culture;
+    }
+    .coding {
+      background-color: $coding;
+    }
+  }
+
   .items {
     margin-top: 10px;
     margin-bottom: 30px;
