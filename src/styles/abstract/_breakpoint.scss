@@ -27,6 +27,14 @@
       display: none;
     }
   }
+  .card-container {
+    .card-imageContainer {
+      display: none;
+    }
+  }
+  .imageContainer {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {

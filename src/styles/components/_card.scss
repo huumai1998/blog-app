@@ -31,3 +31,13 @@
     }
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .card-container {
+    .card-imageContainer {
+      .image {
+        display: none;
+      }
+    }
+  }
+}
