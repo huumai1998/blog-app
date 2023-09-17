@@ -7,7 +7,7 @@ export const Menu = () => {
     <div className="menu-container">
       <MenuPost withTitle={true} withImage={false} />
       <MenuCategories />
-      <MenuPost withTitle={false} withImage={true} />
+      <MenuPost withTitle={false} withImage={false} />
     </div>
   );
 };
