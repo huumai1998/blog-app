@@ -10,9 +10,6 @@ export const CardList = () => {
         <div className="cardList-post">
           <Card />
           <Card />
-          <Card />
-          <Card />
-          <Card />
         </div>
       </div>
       <Pagination />
