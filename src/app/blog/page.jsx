@@ -1,14 +1,16 @@
 import { CardList, Menu } from "@/components";
 import React from "react";
 
-export const BlogPage = () => {
+const BlogPage = () => {
   return (
-    <div className="blog-page-container">
-      <h1 className="title">Style Blog</h1>
-      <div className="content">
+    <div className="page-container">
+      <h1 className="title-title">Style Blog</h1>
+      <div className="page-content">
         <CardList />
         <Menu />
       </div>
     </div>
   );
 };
+
+export default BlogPage;
