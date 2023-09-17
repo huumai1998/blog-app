@@ -10,7 +10,7 @@ export const FooterList = ({ Links, Tags, Social }) => {
           <Link href="/">HomePage</Link>
           <Link href="/">Contact</Link>
           <Link href="/">About</Link>
-          <Link href="/">Blog</Link>
+          <Link href="/blog">Blog</Link>
         </div>
       )}
 
