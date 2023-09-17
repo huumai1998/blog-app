@@ -108,3 +108,9 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}

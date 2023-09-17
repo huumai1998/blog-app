@@ -22,16 +22,7 @@ export const Footer = () => {
       {/* Links List */}
       <div className="links">
         <FooterList Links={true} />
-      </div>
-
-      {/* Tags List */}
-      <div className="links">
         <FooterList Tags={true} />
-      </div>
-
-      {/* Social List */}
-
-      <div className="links">
         <FooterList Social={true} />
       </div>
     </div>
