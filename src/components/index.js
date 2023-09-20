@@ -8,3 +8,4 @@ export * from "./menu";
 export * from "./themeToggle";
 export * from "./authLinks";
 export * from "./card";
+export * from "./comments";
