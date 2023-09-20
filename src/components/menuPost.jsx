@@ -26,8 +26,10 @@ export const MenuPost = ({ withImage, withTitle }) => {
           <div className="textContainer">
             <span className="category travel">Travel</span>
             <h3 className="posTitle">
-              asdf adfa asf asdf asdf asf awfas fas af qawf asd as asdf asdf
-              awfe asd{" "}
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+              quidem maiores veritatis sint illo nostrum, aperiam adipisci,
+              eaque dolore a rem totam hic soluta molestias veniam dicta quasi
+              doloribus necessitatibus?
             </h3>
             <div className="detail">
               <span className="username">Nick Young - </span>

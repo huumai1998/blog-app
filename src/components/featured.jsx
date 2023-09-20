@@ -13,9 +13,14 @@ export const Featured = () => {
         </div>
         <div className="feature-textContainer">
           <h1 className="feature-postTitle">
-            Something write here! this is title of page
+            Lorem ipsum dolor sit amet consectetur.
           </h1>
-          <p className="feature-postDesc">Something here this is text pages!</p>
+          <p className="feature-postDesc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+            adipisci iusto magnam perspiciatis consequatur sint, quis cupiditate
+            ea voluptate officiis autem, sequi tempora, vitae dolorem. Rerum eum
+            maiores facilis officiis?
+          </p>
           <button className="button">Read More</button>
         </div>
       </div>

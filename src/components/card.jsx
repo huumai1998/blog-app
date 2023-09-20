@@ -14,14 +14,13 @@ export const Card = () => {
           <span className="card-category">CULTURE</span>
         </div>
         <Link href="/">
-          <h1>l;sdfk a;lsdkf alsdhf jaljdfkjl hakldfh dlskfj halsdkhfj. </h1>
+          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
         </Link>
         <p className="desc">
-          asdf adsf asdf asdf asdfa sdfas fasdf asfd asdfa sfasd asdf asdf adsf
-          asdf asdf asdfa sdfas fasdf asfd asdfa sfasd asdf asdf adsf asdf asdf
-          asdfa sdfas fasdf asfd asdfa sfasd asdfasdf adsf asdf asdf asdfa sdfas
-          fasdf asfd asdfa sfasd asdf asdf adsf asdf asdf asdfa sdfas fasdf asfd
-          asdfa sfasd asdf
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          placeat qui debitis voluptatibus. Sit dolorum hic quae at repellendus
+          repellat distinctio deserunt maxime itaque magni, voluptas suscipit,
+          aperiam saepe facilis.
         </p>
         <Link href="/" className="button">
           Read More

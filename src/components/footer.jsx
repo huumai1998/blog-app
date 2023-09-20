@@ -16,7 +16,12 @@ export const Footer = () => {
           />
           <h1 className="logoText">Logo here</h1>
         </div>
-        <p className="desc">af asdfj lkjf af al a sjdf alfj alsd</p>
+        <p className="desc">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
+          repellat exercitationem earum reiciendis odio provident, quos esse
+          explicabo suscipit beatae in? Expedita assumenda nobis est ea deserunt
+          dolores voluptas consequuntur?
+        </p>
       </div>
 
       {/* Links List */}

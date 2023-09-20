@@ -7,13 +7,13 @@ const SinglePage = () => {
     <div className="page-container">
       <div className="page-infoContainer">
         <div className="page-textContainer">
-          <h1>asdf asdf asdf aef asdf .</h1>
+          <h1 className="title">Lorem ipsum dolor sit</h1>
           <div className="page-user">
             <div className="page-userImageContainer">
-              <Image src="/test1.jpg" alt="" fill className="image" />
+              <Image src="/test1.jpg" alt="" fill className="avatar" />
             </div>
             <div className="page-userTextContainer">
-              <span className="username">John Wick</span>
+              <span className="username">John Wick - </span>
               <span className="date">01.01.2024</span>
             </div>
           </div>
@@ -23,7 +23,29 @@ const SinglePage = () => {
         </div>
       </div>
       <div className="page-content">
-        <div className="page-post"></div>
+        <div className="page-post">
+          <div className="description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              fuga unde dolor, atque praesentium assumenda et eos labore ea sed
+              quia voluptatibus optio? Tempora voluptatum similique, quam odio
+              aliquam blanditiis!
+            </p>
+            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              fuga unde dolor, atque praesentium assumenda et eos labore ea sed
+              quia voluptatibus optio? Tempora voluptatum similique, quam odio
+              aliquam blanditiis!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              fuga unde dolor, atque praesentium assumenda et eos labore ea sed
+              quia voluptatibus optio? Tempora voluptatum similique, quam odio
+              aliquam blanditiis!
+            </p>
+          </div>
+        </div>
         <Menu />
       </div>
     </div>
