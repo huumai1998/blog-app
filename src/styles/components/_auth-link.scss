@@ -35,10 +35,10 @@
 
 .responsiveMenu {
   position: fixed;
-  top: 100px;
+  top: 60px;
   right: 0;
-  background-color: #111;
-  height: calc(100vh - 90px);
+  background-color: rgba($color: #1b2130, $alpha: 0.9);
+  height: 100vh;
   width: 100%;
   flex-direction: column;
   text-align: center;
@@ -46,14 +46,8 @@
   gap: 50px;
   font-size: 30px;
   display: none;
-  z-index: 1;
+  z-index: 0;
   border-top: 1px dotted $black;
-  a {
-    color: $gray;
-    &:hover {
-      color: $white;
-    }
-  }
 }
 @media screen and (max-width: $tablet) {
   .burger {

@@ -5,6 +5,21 @@
   --textColor: black;
   --softBg: #f0f0f0;
   --softTextColor: #626262;
+  .nav {
+    .nav-container {
+      background-color: rgba($color: #e9e9e4, $alpha: 0.9);
+    }
+  }
+
+  .responsiveMenu {
+    background-color: rgba($color: #e9e9e4, $alpha: 0.9);
+    a {
+      color: $black;
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
 }
 
 .dark {
@@ -13,11 +28,23 @@
   --softBg: #1f273a;
   --softTextColor: #a6a6a6;
   .responsiveMenu {
-    border-top: 1px dotted $white;
+    background-color: rgba($color: #1b2130, $alpha: 0.9);
+    a {
+      color: $gray;
+      &:hover {
+        color: $white;
+      }
+    }
   }
   .button {
     color: $white;
     border: 2px solid rgba(211, 209, 209, 0.1);
+  }
+
+  .nav {
+    .nav-container {
+      background-color: rgba($color: #1b2130, $alpha: 0.9);
+    }
   }
 }
 
@@ -30,10 +57,11 @@
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .container {
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
   background-color: var(--bg);
   color: var(--textColor);
 }
@@ -44,6 +72,7 @@ body {
   margin: auto;
   padding-left: 80px;
   padding-right: 80px;
+  padding-top: 100px;
 }
 
 .page-content {
