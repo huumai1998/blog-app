@@ -1,3 +1,5 @@
+@use "../abstract/" as *;
+
 .page-container {
   .page-infoContainer {
     display: flex;
@@ -54,6 +56,29 @@
           margin-bottom: 20px;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .page-container {
+    .page-infoContainer {
+      display: flex;
+      .page-textContainer {
+        .title {
+          width: 100%;
+        }
+        .page-user {
+          display: flex;
+          position: relative;
+          .page-userImageContainer {
+            display: none;
+          }
+        }
+      }
+    }
+    .page-imageContainer {
+      display: none;
     }
   }
 }

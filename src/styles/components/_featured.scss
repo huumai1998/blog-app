@@ -1,3 +1,5 @@
+@use "../abstract/" as *;
+
 .feature-container {
   margin-top: 0px;
   .feature-title {
@@ -34,7 +36,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: $desktop) {
   .feature-container {
     .feature-title {
       font-size: 76px;
@@ -42,7 +44,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $laptop) {
   .feature-container {
     .feature-title {
       font-size: 64px;
@@ -50,7 +52,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tablet) {
   .feature-container {
     .feature-title {
       font-size: 50px;
@@ -58,7 +60,7 @@
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: $mobile) {
   .feature-container {
     .feature-title {
       font-size: 36px;

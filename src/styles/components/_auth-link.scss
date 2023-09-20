@@ -48,7 +48,7 @@
   display: none;
   border-top: 1px dotted $black;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: $tablet) {
   .burger {
     display: flex;
   }

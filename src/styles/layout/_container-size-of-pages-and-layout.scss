@@ -55,3 +55,80 @@ body {
   font-size: 30px;
   font-weight: 700;
 }
+
+@media screen and (max-width: 1536px) {
+  .wrapper {
+    max-width: 1366px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+  .nav-container {
+    .logo {
+      font-size: 32px;
+    }
+    .links {
+      font-size: 18px;
+      gap: 15px;
+    }
+  }
+
+  .feature-container {
+    .feature-title {
+      font-size: 72px;
+    }
+
+    .feature-imgContainer {
+      display: none;
+    }
+  }
+  .card-container {
+    .card-imageContainer {
+      display: none;
+    }
+  }
+  .imageContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .wrapper {
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .feature-container {
+    .feature-title {
+      font-size: 64px;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .wrapper {
+    max-width: 640px;
+  }
+  .nav-container {
+    .logo {
+      font-size: 24px;
+    }
+  }
+  .feature-container {
+    .feature-title {
+      font-size: 48px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .wrapper {
+    max-width: 475px;
+  }
+  .feature-title {
+    font-size: 36px;
+  }
+}

@@ -13,7 +13,7 @@ const SinglePage = () => {
               <Image src="/test1.jpg" alt="" fill className="avatar" />
             </div>
             <div className="page-userTextContainer">
-              <span className="username">John Wick - </span>
+              <span className="username">John Wick</span>
               <span className="date">01.01.2024</span>
             </div>
           </div>
