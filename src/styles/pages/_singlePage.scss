@@ -1,0 +1,25 @@
+.page-container {
+  .page-infoContainer {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    .page-textContainer {
+      flex: 1;
+      .page-user {
+        .page-userImageContainer {
+          width: 50px;
+          height: 50px;
+          position: relative;
+        }
+      }
+    }
+    .page-imageContainer {
+      flex: 1;
+      height: 350px;
+      position: relative;
+      .image {
+        object-fit: cover;
+      }
+    }
+  }
+}
