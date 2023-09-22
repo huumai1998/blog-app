@@ -47,7 +47,8 @@
   font-size: 30px;
   display: none;
   z-index: 0;
-  border-top: 1px dotted $black;
+  transition: 0.6s;
+  border-bottom-color: black;
 }
 @media screen and (max-width: $tablet) {
   .burger {
