@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { FooterList } from "./footerList";
+import { data } from "@/data";
 
 export const Footer = () => {
   return (
@@ -16,12 +17,7 @@ export const Footer = () => {
           />
           <h1 className="logoText">Logo here</h1>
         </div>
-        <p className="desc">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
-          repellat exercitationem earum reiciendis odio provident, quos esse
-          explicabo suscipit beatae in? Expedita assumenda nobis est ea deserunt
-          dolores voluptas consequuntur?
-        </p>
+        <p className="desc">{data.desc}</p>
       </div>
 
       {/* Links List */}
