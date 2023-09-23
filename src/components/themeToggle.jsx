@@ -3,6 +3,7 @@
 import { ThemeContext } from "@/context/themeContext";
 import Image from "next/image";
 import React, { useContext } from "react";
+import { Moon, Sun } from "../../public";
 export const ThemeToggle = () => {
   const { toggle, theme } = useContext(ThemeContext);
 
@@ -18,13 +19,7 @@ export const ThemeToggle = () => {
           : { backgroundColor: "#0f172a" }
       }
     >
-      <Image
-        src="/moon.png"
-        className="moon"
-        alt="moon"
-        width={20}
-        height={20}
-      />
+      <Image src={Moon} className="moon" alt="moon" width={20} height={20} />
       <div
         className="ball"
         style={
@@ -33,7 +28,7 @@ export const ThemeToggle = () => {
             : { right: 0, background: "white" }
         }
       ></div>
-      <Image src="/sun.png" alt="sun" className="sun" width={20} height={20} />
+      <Image src={Sun} alt="sun" className="sun" width={20} height={20} />
     </div>
   );
 };
