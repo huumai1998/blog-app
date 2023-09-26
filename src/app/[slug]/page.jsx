@@ -1,4 +1,5 @@
 import { Menu } from "@/components";
+import { data } from "@/data";
 import Image from "next/image";
 import React from "react";
 
@@ -25,12 +26,7 @@ const SinglePage = () => {
       <div className="page-content">
         <div className="page-post">
           <div className="description">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              fuga unde dolor, atque praesentium assumenda et eos labore ea sed
-              quia voluptatibus optio? Tempora voluptatum similique, quam odio
-              aliquam blanditiis!
-            </p>
+            <p>{data.desc}</p>
             <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
