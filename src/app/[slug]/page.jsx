@@ -28,18 +28,8 @@ const SinglePage = () => {
           <div className="description">
             <p>{data.desc}</p>
             <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              fuga unde dolor, atque praesentium assumenda et eos labore ea sed
-              quia voluptatibus optio? Tempora voluptatum similique, quam odio
-              aliquam blanditiis!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              fuga unde dolor, atque praesentium assumenda et eos labore ea sed
-              quia voluptatibus optio? Tempora voluptatum similique, quam odio
-              aliquam blanditiis!
-            </p>
+            <p>{data.desc}</p>
+            <p>{data.desc}</p>
           </div>
         </div>
         <Menu />
