@@ -1,4 +1,4 @@
-import { Menu } from "@/components";
+import { Comments, Menu } from "@/components";
 import { data } from "@/data";
 import Image from "next/image";
 import React from "react";
@@ -30,6 +30,9 @@ const SinglePage = () => {
             <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
             <p>{data.desc}</p>
             <p>{data.desc}</p>
+          </div>
+          <div className="slug-page-comment">
+            <Comments />
           </div>
         </div>
         <Menu />
