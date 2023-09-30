@@ -1,6 +1,6 @@
 @use "../abstract/" as *;
 
-.nav {
+.active {
   .nav-container {
     display: flex;
     position: fixed;
@@ -37,6 +37,11 @@
       column-gap: 15px;
     }
   }
+}
+
+.hidden {
+  transition: 0.6s;
+  display: none;
 }
 
 @media screen and (max-width: $tablet) {
