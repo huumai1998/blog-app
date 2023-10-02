@@ -1,7 +1,8 @@
-import { Comments, Menu } from "@/components";
+import { Menu } from "@/components";
 import { data } from "@/data";
 import Image from "next/image";
 import React from "react";
+import { Comments } from "./components";
 
 const SinglePage = () => {
   return (

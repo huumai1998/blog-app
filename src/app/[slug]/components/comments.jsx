@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { test } from "../../public";
+import { test } from "../../../../public";
 
 export const Comments = () => {
   const status = "authenticated";

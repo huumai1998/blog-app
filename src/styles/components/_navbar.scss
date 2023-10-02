@@ -39,11 +39,6 @@
   }
 }
 
-.hidden {
-  transition: 0.6s;
-  display: none;
-}
-
 @media screen and (max-width: $tablet) {
   .nav-container {
     .logo {
