@@ -1,0 +1,26 @@
+.comment-container {
+  margin-top: 50px;
+  .title {
+    color: var(--softTextColor);
+    margin-bottom: 30px;
+  }
+  .write {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    .input {
+      padding: 20px;
+      width: 100%;
+    }
+  }
+
+  .comments {
+    .comment {
+      .user {
+      }
+    }
+    .desc {
+    }
+  }
+}

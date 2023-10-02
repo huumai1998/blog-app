@@ -32,6 +32,12 @@ export const Comments = () => {
                 <span className="date">11.11.1111</span>
               </div>
             </div>
+            <p className="desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Veritatis dolor quae delectus reprehenderit doloremque voluptates
+              maiores aut porro, exercitationem fuga consequatur vero. Omnis
+              laudantium sapiente nisi et ut perferendis qui?
+            </p>
           </div>
         </div>
       </div>
