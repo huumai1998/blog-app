@@ -60,6 +60,18 @@
   }
 }
 
+@media screen and (max-width: $laptop) {
+  .page-container {
+    .page-infoContainer {
+      .page-textContainer {
+        .title {
+          font-size: 60px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $tablet) {
   .page-container {
     .page-infoContainer {
@@ -67,6 +79,7 @@
       .page-textContainer {
         .title {
           width: 100%;
+          font-size: 48px;
         }
         .page-user {
           display: flex;
@@ -76,8 +89,30 @@
         }
       }
     }
+    .page-content {
+      .page-post {
+        .description {
+          p {
+            font-size: 16px;
+            width: 70%;
+          }
+        }
+      }
+    }
     .page-imageContainer {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .page-container {
+    .page-infoContainer {
+      .page-textContainer {
+        .title {
+          font-size: 38px;
+        }
+      }
     }
   }
 }
