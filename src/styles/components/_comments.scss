@@ -54,7 +54,16 @@
   }
 }
 
-@media screen and (max-width: $laptop) {
-  .comments {
+@media screen and (max-width: $tablet) {
+  .comment-container {
+    .write {
+      .input {
+        width: 70%;
+      }
+    }
+
+    .comments {
+      width: 80%;
+    }
   }
 }
