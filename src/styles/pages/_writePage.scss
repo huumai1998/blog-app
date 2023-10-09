@@ -31,7 +31,7 @@
       gap: 20px;
       background-color: var(--bg);
       position: absolute;
-      z-index: 100;
+      z-index: 1;
       width: 100%;
       left: 50px;
       .children {
@@ -43,5 +43,14 @@
     }
   }
   .publish {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #1a8917;
+    color: white;
   }
 }
