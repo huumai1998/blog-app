@@ -3,9 +3,12 @@ import React, { useState } from "react";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { BiImageAdd, BiLinkExternal } from "react-icons/bi";
 import { LiaPhotoVideoSolid } from "react-icons/lia";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 
 const Write = () => {
   const [open, setOpen] = useState(false);
+  const [value, setValue] = useState();
 
   // useEffect(() => {
   //   setOpen(!open);
@@ -30,6 +33,7 @@ const Write = () => {
             </button>
           </div>
         )}
+        <ReactQuill theme="snow" />
       </div>
     </div>
   );
