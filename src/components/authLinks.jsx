@@ -22,7 +22,7 @@ export const AuthLinks = () => {
   };
   return (
     <>
-      {status !== "noauthentiated" ? (
+      {status === "noauthentiated" ? (
         <>
           <Link href="/login" className="link">
             Login
