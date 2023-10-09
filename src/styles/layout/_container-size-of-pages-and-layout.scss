@@ -85,6 +85,14 @@ body {
   font-weight: 700;
 }
 
+.ql-container {
+  font-size: 28px !important;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  color: $gray;
+}
+
 @media screen and (max-width: 1536px) {
   .wrapper {
     max-width: 1366px;
