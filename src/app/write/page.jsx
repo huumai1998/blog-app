@@ -1,7 +1,8 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { AiOutlinePlusCircle, AiOutlineVideoCameraAdd } from "react-icons/ai";
+import React, { useState } from "react";
+import { AiOutlinePlusCircle } from "react-icons/ai";
 import { BiImageAdd, BiLinkExternal } from "react-icons/bi";
+import { LiaPhotoVideoSolid } from "react-icons/lia";
 
 const Write = () => {
   const [open, setOpen] = useState(false);
@@ -25,7 +26,7 @@ const Write = () => {
               <BiLinkExternal className="plus-image" />
             </button>{" "}
             <button className="button children">
-              <AiOutlineVideoCameraAdd className="plus-image" />
+              <LiaPhotoVideoSolid className="plus-image" />
             </button>
           </div>
         )}
