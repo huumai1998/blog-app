@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@types/node": "20.6.2",
-    "@types/react": "18.2.21"
+    "@types/react": "18.2.21",
+    "prisma": "^5.4.2"
   }
 }
