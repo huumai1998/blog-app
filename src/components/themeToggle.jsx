@@ -6,9 +6,6 @@ import React, { useContext } from "react";
 import { Moon, Sun } from "../../public";
 export const ThemeToggle = () => {
   const { toggle, theme } = useContext(ThemeContext);
-
-  console.log(theme);
-
   return (
     <div
       className="theme-container"

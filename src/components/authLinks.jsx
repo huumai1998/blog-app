@@ -1,9 +1,11 @@
 "use client";
+import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 export const AuthLinks = () => {
-  const status = "noauthentiated";
+  const { status } = useSession();
+
   const [open, setOpen] = useState(false);
   const [burger, setBurger] = useState("");
   const [change, setChange] = useState("");
@@ -22,7 +24,7 @@ export const AuthLinks = () => {
   };
   return (
     <>
-      {status === "noauthentiated" ? (
+      {status === "unauthenticated" ? (
         <>
           <Link href="/login" className="link">
             Login
@@ -33,7 +35,9 @@ export const AuthLinks = () => {
           <Link href="/write" className="link">
             Write
           </Link>
-          <span className="link">Logout</span>
+          <span className="logout-link" onClick={signOut}>
+            Logout
+          </span>
         </>
       )}
       <div className={`${burger} ${change}`} onClick={setOpenHandler}>
@@ -47,7 +51,7 @@ export const AuthLinks = () => {
           <Link href="/">Homepage</Link>
           <Link href="/">About</Link>
           <Link href="/">Contact</Link>
-          {status === "noauthentiated" ? (
+          {status === "unauthentiated" ? (
             <>
               <Link href="/login">Login</Link>
             </>
