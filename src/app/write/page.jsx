@@ -5,10 +5,22 @@ import { BiImageAdd, BiLinkExternal } from "react-icons/bi";
 import { LiaPhotoVideoSolid } from "react-icons/lia";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.bubble.css";
+import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
 
 const Write = () => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");
+  const { data, status } = useSession();
+  const router = useRouter();
+
+  if (status === "loading") {
+    return <div className="loading">Loading ...</div>;
+  }
+
+  if (status === "authenticated") {
+    router.push("/");
+  }
 
   // useEffect(() => {
   //   setOpen(!open);
