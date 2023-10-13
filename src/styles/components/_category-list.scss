@@ -19,27 +19,27 @@
       height: 60px;
       justify-content: center;
       border-radius: 10%;
+      &:first-child {
+        background-color: $style;
+      }
+      &:nth-child(2) {
+        background-color: $fashion;
+      }
+      &:nth-child(3) {
+        background-color: $food;
+      }
+      &:nth-child(4) {
+        background-color: $travel;
+      }
+      &:nth-child(5) {
+        background-color: $culture;
+      }
+      &:nth-child(6) {
+        background-color: $coding;
+      }
       .categories-image {
         border-radius: 50%;
       }
-    }
-    .style {
-      background-color: $style;
-    }
-    .fashion {
-      background-color: $fashion;
-    }
-    .food {
-      background-color: $food;
-    }
-    .travel {
-      background-color: $travel;
-    }
-    .culture {
-      background-color: $culture;
-    }
-    .coding {
-      background-color: $coding;
     }
   }
 }
