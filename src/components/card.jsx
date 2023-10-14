@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export const Card = () => {
+export const Card = ({ key, item }) => {
   return (
-    <div className="card-container">
+    <div className="card-container" key={key}>
       <div className="card-imageContainer">
         <Image src="/style.jpg" alt="style" fill className="image" />
       </div>
@@ -15,7 +15,7 @@ export const Card = () => {
           <span className="card-category">CULTURE</span>
         </div>
         <Link href="/">
-          <h1>{data.title}</h1>
+          <h1>{item.title}</h1>
         </Link>
         <p className="desc">{data.desc}</p>
         <Link href="/" className="button">
