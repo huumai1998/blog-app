@@ -24,9 +24,9 @@ export const CardList = async ({ page }) => {
     <div className="cardList-container">
       <h1 className="title">Recent Posts</h1>
       <div className="cardList-posts">
-        {posts?.map((item) => {
-          <Card key={item._id} item={item} />;
-        })}
+        {posts?.map((item) => (
+          <Card key={item._id} item={item} />
+        ))}
       </div>
       <Pagination page={page} hasPrev={hasPrev} hasNext={hasNext} />
     </div>
