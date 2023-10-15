@@ -1,12 +1,14 @@
 import { CardList, Menu } from "@/components";
 import React from "react";
 
-const BlogPage = () => {
+const BlogPage = ({ searchParams }) => {
+  const page = parent(searchParams) || 1;
+  const cat = searchParams;
   return (
     <div className="page-container">
-      <h1 className="title-title">Style Blog!</h1>
+      <h1 className="title-title">{cat} Blog!</h1>
       <div className="page-content">
-        <CardList />
+        <CardList page={page} cat={cat} />
         <Menu />
       </div>
     </div>
