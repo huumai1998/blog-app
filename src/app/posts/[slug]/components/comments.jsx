@@ -1,10 +1,12 @@
+"use client";
+import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 // import { test } from "../../../../public";
 
 export const Comments = () => {
-  const status = "authenticated";
+  const { status } = useSession();
   return (
     <>
       <div className="comment-container">
@@ -15,7 +17,11 @@ export const Comments = () => {
             <button className="button">Send</button>
           </div>
         ) : (
-          <Link href="/login">Login to write a comments</Link>
+          <div className="write">
+            <Link href="/login" className="write">
+              Please login to write a comments
+            </Link>
+          </div>
         )}
         <div className="comments">
           <div className="comment">
