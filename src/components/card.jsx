@@ -21,9 +21,9 @@ export const Card = ({ key, item }) => {
         <Link href={`/posts/${item.slug}`}>
           <h1>{item.title}</h1>
         </Link>
-        <p className="desc">{data.desc}</p>
+        <p className="desc">{item.desc.substring(0, 300)}</p>
         <Link href={`/posts/${item.slug}`} className="button">
-          {item.desc.substring(0, 60)}
+          Read More
         </Link>
       </div>
     </div>
