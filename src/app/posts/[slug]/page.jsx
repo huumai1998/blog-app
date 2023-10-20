@@ -1,18 +1,35 @@
 import { Menu } from "@/components";
-import { data } from "@/data";
 import Image from "next/image";
 import React from "react";
 import { Comments } from "./components";
 
-const SinglePage = async () => {
+const getData = async (slug) => {
+  const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
+    cache: "no-store",
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed");
+  }
+
+  return res.json();
+};
+
+const SinglePage = async ({ params }) => {
+  const { slug } = params;
+
+  const data = await getData(slug);
+
   return (
     <div className="page-container">
       <div className="page-infoContainer">
         <div className="page-textContainer">
-          <h1 className="title">Lorem ipsum dolor sit</h1>
+          <h1 className="title">{data?.title}</h1>
           <div className="page-user">
             <div className="page-userImageContainer">
-              <Image src="/test1.jpg" alt="" fill className="avatar" />
+              {data.img && (
+                <Image src={data.img} alt="" fill className="avatar" />
+              )}
             </div>
             <div className="page-userTextContainer">
               <span className="username">John Wick</span>
@@ -26,12 +43,10 @@ const SinglePage = async () => {
       </div>
       <div className="page-content">
         <div className="page-post">
-          <div className="description">
-            <p>{data.desc}</p>
-            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
-            <p>{data.desc}</p>
-            <p>{data.desc}</p>
-          </div>
+          <div
+            className="description"
+            dangerouslySetInnerHTML={{ __html: data?.desc }}
+          />
           <div className="slug-page-comment">
             <Comments />
           </div>
