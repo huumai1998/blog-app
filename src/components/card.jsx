@@ -13,7 +13,9 @@ export const Card = ({ key, item }) => {
       </div>
       <div className="card-textContainer">
         <div className="card-detail">
-          <span className="card-date">{item.createAt.substring(0, 10)} - </span>
+          <span className="card-date">
+            {item.createdAt.substring(0, 10)} -{" "}
+          </span>
           <span className="card-category">{item.catSlug}</span>
         </div>
         <Link href={`/posts/${item.slug}`}>

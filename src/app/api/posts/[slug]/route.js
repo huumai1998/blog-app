@@ -6,7 +6,7 @@ export const GET = async (req, { params }) => {
   const { slug } = params;
 
   try {
-    const post = await prisma.post.findUnique({ where: { slug } });
+    const post = await prisma.post.findUnique({ where: { slug: slug } });
     return new NextResponse(JSON.stringify({ posts, count }, { status: 200 }));
   } catch (error) {
     console.log(error);
