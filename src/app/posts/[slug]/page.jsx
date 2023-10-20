@@ -24,15 +24,15 @@ const SinglePage = async ({ params }) => {
     <div className="page-container">
       <div className="page-infoContainer">
         <div className="page-textContainer">
-          <h1 className="title">{data?.title}</h1>
+          <h1 className="title">{data?.user.title}</h1>
           <div className="page-user">
             <div className="page-userImageContainer">
-              {data.img && (
-                <Image src={data.img} alt="" fill className="avatar" />
+              {data?.user?.image && (
+                <Image src={data.user.image} alt="" fill className="avatar" />
               )}
             </div>
             <div className="page-userTextContainer">
-              <span className="username">John Wick</span>
+              <span className="username">{data?.user.name}</span>
               <span className="date">01.01.2024</span>
             </div>
           </div>
