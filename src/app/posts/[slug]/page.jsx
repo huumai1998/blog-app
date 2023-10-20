@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { Comments } from "./components";
 
-const SinglePage = () => {
+const SinglePage = async () => {
   return (
     <div className="page-container">
       <div className="page-infoContainer">
