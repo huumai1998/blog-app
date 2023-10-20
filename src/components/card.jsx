@@ -11,8 +11,8 @@ export const Card = ({ key, item }) => {
       </div>
       <div className="card-textContainer">
         <div className="card-detail">
-          <span className="card-date">{data.date} - </span>
-          <span className="card-category">CULTURE</span>
+          <span className="card-date">{item.createAt.substring(0, 10)} - </span>
+          <span className="card-category">{item.catSlug}</span>
         </div>
         <Link href="/">
           <h1>{item.title}</h1>

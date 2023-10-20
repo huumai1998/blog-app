@@ -2,8 +2,8 @@ import { CardList, Menu } from "@/components";
 import React from "react";
 
 const BlogPage = ({ searchParams }) => {
-  const page = parent(searchParams) || 1;
-  const cat = searchParams;
+  const page = parseInt(searchParams.page) || 1;
+  const { cat } = searchParams;
   return (
     <div className="page-container">
       <h1 className="title-title">{cat} Blog!</h1>
