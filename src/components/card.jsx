@@ -7,19 +7,21 @@ export const Card = ({ key, item }) => {
   return (
     <div className="card-container" key={key}>
       <div className="card-imageContainer">
-        <Image src="/style.jpg" alt="style" fill className="image" />
+        {item.img && (
+          <Image src={item.img} alt="style" fill className="image" />
+        )}
       </div>
       <div className="card-textContainer">
         <div className="card-detail">
           <span className="card-date">{item.createAt.substring(0, 10)} - </span>
           <span className="card-category">{item.catSlug}</span>
         </div>
-        <Link href="/">
+        <Link href={`/posts/${item.slug}`}>
           <h1>{item.title}</h1>
         </Link>
         <p className="desc">{data.desc}</p>
-        <Link href="/" className="button">
-          Read More
+        <Link href={`/posts/${item.slug}`} className="button">
+          {item.desc.substring(0, 60)}
         </Link>
       </div>
     </div>
