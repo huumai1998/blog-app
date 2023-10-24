@@ -3,10 +3,29 @@ import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import useSWR from "swr";
 // import { test } from "../../../../public";
 
-export const Comments = () => {
+const fetcher = async (url) => {
+  const res = await fetch(url);
+
+  const data = await res.json();
+
+  if (!res.ok) {
+    const error = new Error(data.message);
+    throw error;
+  }
+
+  return data;
+};
+
+export const Comments = ({ postSlug }) => {
   const { status } = useSession();
+
+  const { data, isLoading } = useSWR(
+    `http://localhost:3000/api/comments?postSlug=${postSlug}`,
+    fetcher
+  );
   return (
     <>
       <div className="comment-container">
@@ -24,27 +43,28 @@ export const Comments = () => {
           </div>
         )}
         <div className="comments">
-          <div className="comment">
-            <div className="user">
-              {/* <Image
-                src={test}
-                alt=""
-                width={50}
-                height={50}
-                className="image"
-              /> */}
-              <div className="userInfo">
-                <span className="username">John</span>
-                <span className="date">11.11.1111</span>
-              </div>
-            </div>
-            <p className="desc">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Veritatis dolor quae delectus reprehenderit doloremque voluptates
-              maiores aut porro, exercitationem fuga consequatur vero. Omnis
-              laudantium sapiente nisi et ut perferendis qui?
-            </p>
-          </div>
+          {isLoading
+            ? "loading"
+            : data?.map((item) => {
+                <div className="comment" key={item._id}>
+                  <div className="user">
+                    {item?.user?.image && (
+                      <Image
+                        src={item.user.image}
+                        alt=""
+                        width={50}
+                        height={50}
+                        className="image"
+                      />
+                    )}
+                    <div className="userInfo">
+                      <span className="username">{item.user.name}</span>
+                      <span className="date">{item.createAt}</span>
+                    </div>
+                  </div>
+                  <p className="desc">{item.desc}</p>
+                </div>;
+              })}
         </div>
       </div>
     </>
