@@ -59,7 +59,9 @@ export const Comments = ({ postSlug }) => {
                     )}
                     <div className="userInfo">
                       <span className="username">{item.user.name}</span>
-                      <span className="date">{item.createdAt}</span>
+                      <span className="date">
+                        {item.createdAt.substring(0, 10)}
+                      </span>
                     </div>
                   </div>
                   <p className="desc">{item.desc}</p>

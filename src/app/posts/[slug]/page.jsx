@@ -33,7 +33,7 @@ const SinglePage = async ({ params }) => {
             </div>
             <div className="page-userTextContainer">
               <span className="username">{data?.user.name}</span>
-              <span className="date">01.01.2024</span>
+              <span className="date">{data.createdAt.substring(0, 10)}</span>
             </div>
           </div>
         </div>
