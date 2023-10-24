@@ -45,7 +45,7 @@ export const Comments = ({ postSlug }) => {
         <div className="comments">
           {isLoading
             ? "loading"
-            : data?.map((item) => {
+            : data?.map((item) => (
                 <div className="comment" key={item._id}>
                   <div className="user">
                     {item?.user?.image && (
@@ -59,12 +59,12 @@ export const Comments = ({ postSlug }) => {
                     )}
                     <div className="userInfo">
                       <span className="username">{item.user.name}</span>
-                      <span className="date">{item.createAt}</span>
+                      <span className="date">{item.createdAt}</span>
                     </div>
                   </div>
                   <p className="desc">{item.desc}</p>
-                </div>;
-              })}
+                </div>
+              ))}
         </div>
       </div>
     </>
