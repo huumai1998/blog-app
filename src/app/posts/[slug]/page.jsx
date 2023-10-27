@@ -14,7 +14,7 @@ const getData = async (slug) => {
 
   return res.json();
 };
-
+// mailam forsure
 const SinglePage = async ({ params }) => {
   const { slug } = params;
 
