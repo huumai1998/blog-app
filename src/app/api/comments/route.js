@@ -1,3 +1,4 @@
+import { getAuthSession } from "@/utils/auth";
 import prisma from "@/utils/connect";
 import { NextResponse } from "next/server";
 
@@ -26,11 +27,16 @@ export const GET = async (req) => {
 
 // create a comments
 export const POST = async (req) => {
-  const { searchParams } = new URL(req.url);
+  const session = getAuthSession();
 
-  const postSlug = searchParams.get("postSlug");
+  if (!session) {
+    return new NextResponse(
+      JSON.stringify({ message: "Not Authenticated!" }, { status: 401 })
+    );
+  }
 
   try {
+    const body = await req.json();
     const comments = await prisma.comment.findMany({
       where: {
         ...(postSlug && { postSlug }),
