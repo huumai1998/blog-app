@@ -27,7 +27,7 @@ export const GET = async (req) => {
 
 // create a comments
 export const POST = async (req) => {
-  const session = getAuthSession();
+  const session = await getAuthSession();
 
   if (!session) {
     return new NextResponse(
@@ -37,11 +37,11 @@ export const POST = async (req) => {
 
   try {
     const body = await req.json();
-    const comments = await prisma.comment.create({
+    const comment = await prisma.comment.create({
       data: { ...body, userEmail: session.user.email },
     });
 
-    return new NextResponse(JSON.stringify(comments, { status: 200 }));
+    return new NextResponse(JSON.stringify(comment, { status: 200 }));
   } catch (err) {
     // console.log(err);
     return new NextResponse(
