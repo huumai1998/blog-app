@@ -37,11 +37,8 @@ export const POST = async (req) => {
 
   try {
     const body = await req.json();
-    const comments = await prisma.comment.findMany({
-      where: {
-        ...(postSlug && { postSlug }),
-      },
-      include: { user: true },
+    const comments = await prisma.comment.create({
+      data: { ...body, userEmail: session.user.email },
     });
 
     return new NextResponse(JSON.stringify(comments, { status: 200 }));
