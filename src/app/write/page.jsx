@@ -12,6 +12,8 @@ const Write = () => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");
   const { data, status } = useSession();
+  const [file, setFile] = useState(null);
+  const [title, setTitle] = useState("");
   const router = useRouter();
 
   if (status === "loading") {
@@ -34,8 +36,16 @@ const Write = () => {
         </button>
         {open && (
           <div className="add">
+            <input
+              type="file"
+              id="image"
+              onChange={(e) => setFile(e.target.files[0])}
+              style={{ display: "none" }}
+            />
             <button className="children">
-              <BiImageAdd className="plus-image" />
+              <label htmlFor="image" className="pointer">
+                <BiImageAdd className="plus-image" />
+              </label>
             </button>{" "}
             <button className="children">
               <BiLinkExternal className="plus-image" />
