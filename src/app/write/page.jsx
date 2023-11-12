@@ -24,6 +24,7 @@ const Write = () => {
   const [file, setFile] = useState(null);
   const [media, setMedia] = useState("");
   const [title, setTitle] = useState("");
+  const [catSlug, setCatSlug] = useState("");
   const router = useRouter();
 
   useEffect(() => {
@@ -77,6 +78,14 @@ const Write = () => {
     router.push("/");
   }
 
+  const slugify = (str) =>
+    str
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, "")
+      .replace(/[\s_-]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+
   const handleSubmit = async () => {
     const res = await fetch("/api/posts", {
       method: "POST",
@@ -103,6 +112,14 @@ const Write = () => {
         className="input"
         onChange={(e) => setTitle(e.target.value)}
       />
+      <select className="select" onChange={(e) => setCatSlug(e.target.value)}>
+        <option value="style">style</option>
+        <option value="fashion">fashion</option>
+        <option value="food">food</option>
+        <option value="culture">culture</option>
+        <option value="travel">travel</option>
+        <option value="coding">coding</option>
+      </select>
       <div className="editor">
         <button className="plus-button" onClick={() => setOpen(!open)}>
           <AiOutlinePlus className="plus-image" />

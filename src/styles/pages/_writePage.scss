@@ -5,6 +5,7 @@
     border: none;
     outline: none;
     background-color: transparent;
+    color: var(--textColor);
     &::placeholder {
       color: #b3b3b1;
     }
