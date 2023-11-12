@@ -61,7 +61,7 @@ const Write = () => {
           // Handle successful uploads on complete
           // For instance, get the download URL: https://firebasestorage.googleapis.com/...
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-            console.log("File available at", downloadURL);
+            setMedia(downloadURL);
           });
         }
       );
@@ -79,7 +79,12 @@ const Write = () => {
 
   return (
     <div className="write-page-container">
-      <input type="text" placeholder="Title" className="input" />
+      <input
+        type="text"
+        placeholder="Title"
+        className="input"
+        onChange={(e) => setTitle(e.target.value)}
+      />
       <div className="editor">
         <button className="plus-button" onClick={() => setOpen(!open)}>
           <AiOutlinePlus className="plus-image" />
